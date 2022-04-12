@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="JS-CSS/estilos.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="JS-CSS/bootstrap.js"></script>
+    <link rel="stylesheet" href="JS-CSS/bootstrap.css">
+    
+    <title>Gasto Semanal</title>
+</head>
+
+<body>
+    <div class="conten">
+        <div class="titulo">
+            <h5></h5>
+            <p class="titu">Gasto semanal</p>
+        </div>
+        <div class="pantalla">
+            <div class="box1">
+                <div class="tex">
+                    <h5>Añade tus Gastos</h5>
+                </div>
+                <form id="formGastos">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Gastos</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Cantidad</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+            </div>
+            <div class="box2">
+                <div class="tex">
+                    <h5>Listado</h5>
+                </div>
+                <div class="card" id="mostrarGastos">
+                </div>
+                <div class="alert alert-primary mt-3" role="alert">
+                    <div class="col">
+                        <span class="float-left">Presupuesto: </span>
+                        <span class="float-right" id="spanPresupuesto"></span>
+                    </div> 
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    <div class="col">
+                        <span class="float-left">Restante: </span>
+                        <span class="float-right" id="spanRestante"></span>
+                    </div> 
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+    </div>
+
+    
+        <!--VENTANA MODAL INGRESO VALOR MENSUAL-->
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Presupuesto Semanal</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="fomrPresupuesto">
+                    <div class="modal-body">
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" name="inputGastoSemanal" id="inputGastoSemanal" placeholder="Ingresa la cantidad">
+                            <label for="inputGastoSemanal">Ingresa la cantidad</label>
+                        </div> 
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+         
+
+</body>
+
+
+<script src="controlador.js"></script>
+
+</html>

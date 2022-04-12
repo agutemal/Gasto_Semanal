@@ -1,0 +1,49 @@
+.conten{
+  background-color: rgb( 218, 247, 166 );
+  
+  height: 690px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.titu{
+  font-size: 30px;
+}
+
+.pantalla{
+  background-color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 25px;
+  height: 400px;
+  position: relative;
+  
+
+}
+.titulo{
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.box1{
+  /*background-color: blueviolet;*/
+  height: 350px;
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 20px;
+  position: absolute;
+}
+.box2{
+  /*background-color: aquamarine;*/
+  height: 350px;
+  width: 545px;
+  margin-left: 10px;
+  margin-top: 20px;
+  position: absolute;
+  left: 545px;
+}
+.tex{
+  margin-top: 15px;
+  text-align: center;
+  overflow: hidden;
+}
